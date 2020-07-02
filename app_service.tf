@@ -5,6 +5,10 @@ resource "azurerm_app_service" "app_service" {
   app_service_plan_id = azurerm_app_service_plan.app_service_plan.id
   https_only          = true
 
+  site_config {
+    always_on = true
+  }
+
   app_settings = {
     "APP_INSIGHTS_INSTRUMENTATION_KEY" = azurerm_application_insights.app_insights.instrumentation_key
   }
@@ -12,4 +16,8 @@ resource "azurerm_app_service" "app_service" {
 
 output "app_service_hostname" {
   value = azurerm_app_service.app_service.default_site_hostname
+}
+
+output "app_service_outbound_ip_addresses" {
+  value = azurerm_app_service.app_service.outbound_ip_addresses
 }

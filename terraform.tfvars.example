@@ -1,7 +1,7 @@
-subscription_id =
-tenant_id =
-resource_group =
-acr_name =
-app_insights_name =
-app_service_name =
-app_service_plan_name =
+subscription_id = ""
+tenant_id = ""
+resource_group = ""
+acr_name = ""
+app_insights_name = ""
+app_service_name = ""
+app_service_plan_name = ""
