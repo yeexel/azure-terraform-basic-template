@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The goal of this template is to provide an automated way of provisioning an infrustructure to handle Dockerized applications.
+The goal of this template is to provide an automated way of provisioning an infrastructure to handle Dockerized applications.
 
 Right now this template works with the following Azure resources:
 
@@ -19,7 +19,7 @@ If you're a Mac user, you can install Terraform by using Homebrew command `brew 
 
 Once Terraform is installed, run `terraform version` to verify installation.
 
-_Note_. The template expects that you already have an existing resource group in Azure.
+_*Note*. The template expects that you already have an existing resource group in Azure._
 
 Next step is to rename `terraform.tfvars.example` file to be `terraform.tfvars`. This file contains a list of credentials you need to configure before using the template.
 
